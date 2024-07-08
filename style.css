@@ -1,0 +1,120 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+:where(header, nav)
+{
+    display: flex;
+    justify-content: space-around;
+}
+ 
+nav
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav_item
+    {
+        color:black;
+    }
+    .nav_item:hover
+    {
+        color: rgb(148, 148, 148);
+        font-size: calc(100% + 25%);
+    }
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.welcome_banner
+{
+    position:relative;
+    display:flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 50vh;
+    color:white;
+    h1
+    {
+        font-size: calc(100% + 6vh);
+        margin: 0;
+    }
+
+    .button_our_services
+    {
+        color: white;
+        background-color:rgb(0, 206, 209);
+        padding:3%;
+        border-radius:5%;
+    }
+
+    .button_our_services:hover
+    {
+        padding:4%;
+        background-color: rgb(143, 252, 254);
+    }
+
+    .button_get_started
+    {
+        color: white;
+        border: 1px white solid;
+        padding:3%;
+        border-radius:5%;
+    }
+
+    .button_get_started:hover
+    {
+        padding:4%;
+        background-color: rgb(213, 213, 213);
+    }
+}
+
+.why_choose_us
+{
+    display:flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-top:2%;
+}
+
+.features
+{
+    width: 80%;
+    height: 24vh;
+    display:flex; 
+    justify-content:space-between;
+    position: relative;
+    section
+    {
+        width: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        p
+        {
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .circle-background
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(79, 79, 79);
+        width: 15vh;
+        height: 15vh;
+        z-index: -1;
+        border-radius: 100%;
+        top: 0;
+    }
+}
